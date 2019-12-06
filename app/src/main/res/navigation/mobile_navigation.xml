@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/book_list_fragment">
+
+    <fragment
+        android:id="@+id/book_list_fragment"
+        android:name="com.example.booksappandroid.screens.books.BookListFragment"
+        android:label="@string/book_list"
+        tools:layout="@layout/book_list_fragment" />
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.booksappandroid.auth.login.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/login_fragment" />
+
+    <fragment
+        android:id="@+id/book_edit_fragment"
+        android:name="com.example.booksappandroid.screens.book.BookEditFragment"
+        android:label="Book Edit"
+        tools:layout="@layout/book_edit_fragment" />
+
+    <fragment
+        android:id="@+id/chart_fragment"
+        android:name="com.example.booksappandroid.screens.books.ChartFragment"
+        android:label="Chart"
+        tools:layout="@layout/chart_fragment"/>
+
+    <fragment
+        android:id="@+id/map_fragment"
+        android:name="com.example.booksappandroid.screens.books.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/map_fragment"/>
+
+</navigation>
